@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Knowledge Shaping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .test-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 1rem;
+    }
+
+    .test-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .emoji {
+      font-size: 2rem;
+    }
+
+    h1 span {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body class="text-center">
+
+  <div class="container mt-5">
+    <h1 class="mb-4 display-5 fw-bold">
+      Welcome to <span>KNOWLEDGE SHAPING</span>
+    </h1>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Alphabet Test -->
+      <div class="col-md-4">
+        <div class="card test-card bg-primary bg-opacity-25 p-4">
+          <div class="card-body">
+            <div class="emoji mb-2">🔤</div>
+            <h5 class="card-title">Alphabet Test</h5>
+            <p class="card-text">Identify and number alphabets with speed</p>
+            <a href="/alphabet" class="btn btn-primary w-100"><i class="bi bi-pen-fill"></i> Start Test</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Squares Test -->
+      <div class="col-md-4">
+        <div class="card test-card bg-success bg-opacity-25 p-4">
+          <div class="card-body">
+            <div class="emoji mb-2">🟥</div>
+            <h5 class="card-title">Squares Test</h5>
+            <p class="card-text">Practice squares of numbers up to your limit</p>
+            <a href="/squares" class="btn btn-success w-100"><i class="bi bi-square-fill"></i> Take Test</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cubes Test -->
+      <div class="col-md-4">
+        <div class="card test-card bg-warning bg-opacity-25 p-4">
+          <div class="card-body">
+            <div class="emoji mb-2">🟨</div>
+            <h5 class="card-title">Cubes Test</h5>
+            <p class="card-text">Improve your cube calculations quickly</p>
+            <a href="/cubes" class="btn btn-warning w-100"><i class="bi bi-cube-fill"></i> Take Test</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
